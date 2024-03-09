@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GaLaInRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../assets/Logo.ico" type="image/x-icon">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "header_application" %>
+    <%= stylesheet_link_tag "index" %>
+    <%= stylesheet_link_tag "footer" %>
+    <%= stylesheet_link_tag "math" %>
+    <%= stylesheet_link_tag "math/adicao" %>
+
+    <%#= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <nav class="nav-exerc">
+      <%= link_to "Home", root_path, class:'a-home' %>
+      <%= link_to "Matemática", matematica_adicao_path, class:'a-math' %>
+      <%= link_to "Português", './', class:'a-port' %>
+      <%= link_to "Criadores", './', class:'a-devs' %>
+
+    </nav>
+    <header class="GaLa-Title">
+      <h1><span class='Adi'>Adi</span><span class='cao'>ção</span></h1>
+    </header>
+    <%= yield %>
+
+    <footer>
+      <span class="Laura">&copy; Laura Refosco &</span> <span class="Gabriel">Gabriel Kochem Ichazo</span>
+    </footer>
+  </body>
+</html>

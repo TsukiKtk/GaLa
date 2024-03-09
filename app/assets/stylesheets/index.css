@@ -1,0 +1,14 @@
+.index-text, .index_text-2, .index_text-3{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #470f5b;
+    margin-top: 50px;
+
+}
+
+.section-index{
+    border-bottom: 3px solid #fff;
+    
+}

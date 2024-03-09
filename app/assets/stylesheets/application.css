@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Gala';
+    src: url('AdigianaUI.ttf') format(truetype);
+}
+html{
+    font-family: 'Gala', sans-serif;
+}

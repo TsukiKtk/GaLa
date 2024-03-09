@@ -1,0 +1,33 @@
+<div class='content'>
+    <%= form_tag(matematica_adicao_path, method: :post, remote: true) do  %>
+        <p class='numeros'><%= @nm1 %> + <%= @nm2 %></p>
+        <%= hidden_field_tag :nm1, @nm1 %>
+        <%= hidden_field_tag :nm2, @nm2 %>
+        <%= text_field_tag :resposta %><br>
+        <%= submit_tag 'Contar' %><br>
+
+        <%= flash[:notice] %>
+        <div class="alert">
+            <%= flash[:alert]%>
+        </div>
+    <% end %>
+
+</div>
+<div class='content-2'>
+    <%= form_tag(matematica_adicao_path, method: :post, remote: true) do  %>
+        <p class='numeros'><%= @nm1_2 %> - <%= @nm2_2 %></p>
+        <%= hidden_field_tag :nm1_2, @nm1_2 %>
+        <%= hidden_field_tag :nm2_2, @nm2_2 %>
+        <%= text_field_tag :resposta_2 %><br>
+        <%= submit_tag 'Contar' %><br>
+
+        <%= flash[:notice_2] %>
+        <% if flash[:alert_2].present? %>
+        <div class="alert">            
+            <%= flash[:alert_2] %>
+        </div>
+        <%end%>
+
+    <% end %>
+
+</div>

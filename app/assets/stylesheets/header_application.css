@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Gala';
+    src: url('AdigianaUI.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gala', sans-serif;
+    background-color: #e5b6f8;
+
+}
+
+.nav-exerc{
+    display: flex;
+    border-bottom: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-exerc > a{
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-size: large;
+    font-size: 40px;
+    
+}
+
+.GaLa-Title{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #fff;
+    font-size: 45px;
+
+}
+
+.Ga, .Ex, .cii, .os, .a-math, .a-devs, .Adi{
+    color: #470f5b;
+
+}
+
+.La, .er, .ci, .a-home, .a-port, .cao{
+    color: #fff;
+
+}
